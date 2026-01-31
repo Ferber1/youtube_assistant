@@ -1,0 +1,25 @@
+[project]
+name = "youtube-assistant"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nikita Sidorenko",email = "nikita1991sidorenko@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<3.15"
+dependencies = [
+    "aiogram (>=3.23.0,<4.0.0)",
+    "playwright (>=1.57.0,<2.0.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)",
+    "pyautogui (>=0.9.54,<0.10.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "watchfiles (>=1.1.1,<2.0.0)"
+]
